@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from LaylaRobot.modules.sql import BASE, SESSION
+from HarleyRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String
 
 
