@@ -1,7 +1,7 @@
 import threading
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.sql import BASE, SESSION
+from HarleyRobot import dispatcher
+from HarleyRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
