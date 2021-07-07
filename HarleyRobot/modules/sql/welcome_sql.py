@@ -292,7 +292,7 @@ class WelcomeMute(BASE):
         self.chat_id = str(chat_id)  # ensure string
         self.welcomemutes = welcomemutes
 
-ū
+
 class WelcomeMuteUsers(BASE):
     __tablename__ = "human_checks"
     user_id = Column(Integer, primary_key=True)
