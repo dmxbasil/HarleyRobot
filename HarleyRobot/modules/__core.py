@@ -1,15 +1,15 @@
-from LaylaRobot import telethn as tbot
-from LaylaRobot.events import register
+from HarleyRobot import telethn as tbot
+from HarleyRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from LaylaRobot import OWNER_ID, DEV_USERS
-from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY
+from HarleyRobot import OWNER_ID, DEV_USERS
+from HarleyRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from HarleyRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './LaylaRobot/resources/yone.jpg'
+water = './HarleyRobot/resources/images.jpeg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./LaylaRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./HarleyRobot/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
