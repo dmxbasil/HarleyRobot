@@ -1,8 +1,8 @@
 import os
-from LaylaRobot import telethn as tbot
+from HarleyRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from LaylaRobot.events import register
-from LaylaRobot import *
+from HarleyRobot.events import register
+from HarleyRobot import *
 from telethon import *
 from telethon.tl import *
 
