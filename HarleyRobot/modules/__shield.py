@@ -25,13 +25,13 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from LaylaRobot import BOT_ID
-from LaylaRobot.conf import get_int_key, get_str_key
+from HarleyRobot import BOT_ID
+from HarleyRobot.conf import get_int_key, get_str_key
 
-# from LaylaRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from LaylaRobot.pyrogramee.telethonbasics import is_admin
-from LaylaRobot.events import register
-from LaylaRobot import MONGO_DB_URI 
+# from HarleyRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from HarleyRobot.pyrogramee.telethonbasics import is_admin
+from HarleyRobot.events import register
+from HarleyRobot import MONGO_DB_URI 
 from pymongo import MongoClient
 from LaylaRobot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
