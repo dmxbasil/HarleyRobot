@@ -33,13 +33,13 @@ from HarleyRobot.pyrogramee.telethonbasics import is_admin
 from HarleyRobot.events import register
 from HarleyRobot import MONGO_DB_URI 
 from pymongo import MongoClient
-from LaylaRobot.modules.sql_extended.nsfw_watch_sql import (
+from HarleyRobot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from LaylaRobot import telethn as tbot
+from HarleyRobot import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -48,7 +48,7 @@ MONGO_DB_URI = get_str_key("MONGO_DB_URI")
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["LaylaRobot"]
+db = client["HarleyRobot"]
 
 async def is_nsfw(event):
     lmao = event
