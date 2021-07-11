@@ -1,4 +1,4 @@
-from LaylaRobot import telethn as tbot
+from HarleyRobot import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from LaylaRobot import *
-from LaylaRobot.events import register
+from HarleyRobot import *
+from HarleyRobot.events import register
 
 
 async def is_register_admin(chat, user):
