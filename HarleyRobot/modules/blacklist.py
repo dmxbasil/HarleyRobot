@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import LaylaRobot.modules.sql.blacklist_sql as sql
-from LaylaRobot import dispatcher, LOGGER
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LaylaRobot.modules.helper_funcs.extraction import extract_text
-from LaylaRobot.modules.helper_funcs.misc import split_message
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.warns import warn
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.connection import connected
-from LaylaRobot.modules.sql.approve_sql import is_approved
-from LaylaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import HarleyRobot.modules.sql.blacklist_sql as sql
+from HarleyRobot import dispatcher, LOGGER
+from HarleyRobot.modules.disable import DisableAbleCommandHandler
+from HarleyRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from HarleyRobot.modules.helper_funcs.extraction import extract_text
+from HarleyRobot.modules.helper_funcs.misc import split_message
+from HarleyRobot.modules.log_channel import loggable
+from HarleyRobot.modules.warns import warn
+from HarleyRobot.modules.helper_funcs.string_handling import extract_time
+from HarleyRobot.modules.connection import connected
+from HarleyRobot.modules.sql.approve_sql import is_approved
+from HarleyRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
