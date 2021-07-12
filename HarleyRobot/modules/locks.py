@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import LaylaRobot.modules.sql.locks_sql as sql
-from LaylaRobot import dispatcher, DRAGONS, LOGGER
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import (
+import HarleyRobot.modules.sql.locks_sql as sql
+from HarleyRobot import dispatcher, DRAGONS, LOGGER
+from HarleyRobot.modules.disable import DisableAbleCommandHandler
+from HarleyRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.connection import connected
-from LaylaRobot.modules.sql.approve_sql import is_approved
-from LaylaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from HarleyRobot.modules.log_channel import loggable
+from HarleyRobot.modules.connection import connected
+from HarleyRobot.modules.sql.approve_sql import is_approved
+from HarleyRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
