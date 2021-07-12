@@ -20,7 +20,7 @@ from HarleyRobot.modules.helper_funcs.chat_status import (
 )
 from HarleyRobot.modules.helper_funcs.extraction import extract_user
 from HarleyRobot.modules.log_channel import gloggable
-from telegram imporHarleyRobott ParseMode, TelegramError, Update
+from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
