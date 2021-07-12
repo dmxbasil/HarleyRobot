@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import LaylaRobot.modules.sql.feds_sql as sql
-from LaylaRobot import (
+import HarleyRobot.modules.sql.feds_sql as sql
+from HarleyRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from LaylaRobot import (
     WOLVES,
     dispatcher,
 )
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.alternate import send_message
-from LaylaRobot.modules.helper_funcs.chat_status import is_user_admin
-from LaylaRobot.modules.helper_funcs.extraction import (
+from HarleyRobot.modules.disable import DisableAbleCommandHandler
+from HarleyRobot.modules.helper_funcs.alternate import send_message
+from HarleyRobot.modules.helper_funcs.chat_status import is_user_admin
+from HarleyRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from LaylaRobot.modules.helper_funcs.string_handling import markdown_parser
+from HarleyRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
