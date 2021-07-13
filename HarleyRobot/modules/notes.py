@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import LaylaRobot.modules.sql.notes_sql as sql
-from LaylaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from LaylaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from LaylaRobot.modules.helper_funcs.msg_types import get_note_type
-from LaylaRobot.modules.helper_funcs.string_handling import (
+import HarleyRobot.modules.sql.notes_sql as sql
+from HarleyRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from HarleyRobot.modules.disable import DisableAbleCommandHandler
+from HarleyRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from HarleyRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from HarleyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from HarleyRobot.modules.helper_funcs.msg_types import get_note_type
+from HarleyRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
