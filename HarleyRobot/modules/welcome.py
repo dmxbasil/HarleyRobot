@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import LaylaRobot.modules.sql.welcome_sql as sql
-import LaylaRobot
-from LaylaRobot import (
+import HarleyRobot.modules.sql.welcome_sql as sql
+import HarleyRobot
+from HarleyRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from LaylaRobot import (
     dispatcher,
     JOIN_LOGGER
 )
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from HarleyRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from LaylaRobot.modules.helper_funcs.msg_types import get_welcome_type
-from LaylaRobot.modules.helper_funcs.string_handling import (
+from HarleyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from HarleyRobot.modules.helper_funcs.msg_types import get_welcome_type
+from HarleyRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from HarleyRobot.modules.log_channel import loggable
+from HarleyRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not LaylaRobot.ALLOW_CHATS:
+                if not HarleyRobot.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)
