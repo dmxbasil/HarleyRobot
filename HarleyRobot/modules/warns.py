@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from LaylaRobot import TIGERS, WOLVES, dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from HarleyRobot import TIGERS, WOLVES, dispatcher
+from HarleyRobot.modules.disable import DisableAbleCommandHandler
+from HarleyRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from LaylaRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from LaylaRobot.modules.helper_funcs.extraction import (
+from HarleyRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from LaylaRobot.modules.helper_funcs.filters import CustomFilters
-from LaylaRobot.modules.helper_funcs.misc import split_message
-from LaylaRobot.modules.helper_funcs.string_handling import split_quotes
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.sql import warns_sql as sql
+from HarleyRobot.modules.helper_funcs.filters import CustomFilters
+from HarleyRobot.modules.helper_funcs.misc import split_message
+from HarleyRobot.modules.helper_funcs.string_handling import split_quotes
+from HarleyRobot.modules.log_channel import loggable
+from HarleyRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
