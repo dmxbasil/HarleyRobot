@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import LaylaRobot.modules.sql.users_sql as sql
-from LaylaRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from LaylaRobot.modules.sql.users_sql import get_all_users
+import HarleyRobot.modules.sql.users_sql as sql
+from HarleyRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from HarleyRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from HarleyRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
