@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from LaylaRobot import LOGGER, dispatcher
-from LaylaRobot.modules.disable import DisableAbleMessageHandler
-from LaylaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from HarleyRobot import LOGGER, dispatcher
+from HarleyRobot.modules.disable import DisableAbleMessageHandler
+from HarleyRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
