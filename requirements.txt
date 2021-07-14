@@ -26,6 +26,7 @@ jikanpy
 speedtest-cli
 coffeehouse==2.2.4
 regex
+ffmpeg-python
 bleach
 git+https://github.com/starry69/python-markdown2.git
 wikipedia
