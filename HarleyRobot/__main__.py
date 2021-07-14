@@ -353,7 +353,7 @@ def help_button(update, context):
 
 
 @run_async
-def layla_about_callback(update, context):
+def harley_about_callback(update, context):
     query = update.callback_query
     if query.data == "harley_":
         query.message.edit_text(
