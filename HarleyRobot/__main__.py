@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M *ʜᴀʀʟᴇʏ ϙᴜɪɴɴ*🖤
+Hello, I'M *ʜᴀʀʟᴇʏ ϙᴜɪɴɴ* [🖤](https://images6.alphacoders.com/788/788475.png)
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
 Maintained by [LUͥ₡łͣ₣ͫEƦ 🎭](t.me/SSJ4GOGETA)
 """
