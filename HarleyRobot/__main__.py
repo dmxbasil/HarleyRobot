@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Harley Never Die Baby!\n<b>Alive since:</b> <code>{}</code>".format(
+            "𝙃𝙖𝙧𝙡𝙚𝙮 𝙉𝙚𝙫𝙚𝙧 𝘿𝙞𝙚 𝘽𝙖𝙗𝙮!\n<b>Alive since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
