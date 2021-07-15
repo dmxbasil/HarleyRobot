@@ -357,19 +357,19 @@ def harley_about_callback(update, context):
     query = update.callback_query
     if query.data == "harley_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Harley Quinn*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Harley's licensed under the GNU General Public License v3.0_
-                 \n❍ My Owner @SSJ4GOGETA
-                 \n❍ Support Group @HarleyQuinnSupport
-                 \n❍ Update & News @HarleyQuinnNews.
-                 \nHere is the [💾Repository](https://github.com/gogeta0sama/HarleyRobot).
-                 \n\nIf you have any question about Harley Quinn, let us know at .""",
+            text=""" ℹ️ ɪ'ᴍ *ʜᴀʀʟᴇʏ ϙᴜɪɴɴ*, ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.         
+\n❍ ɪ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs.         
+\n❍ ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜsᴇʀs ᴡɪᴛʜ ᴄᴜsᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs ᴀɴᴅ ᴇᴠᴇɴ sᴇᴛ ᴀ ɢʀᴏᴜᴘ's ʀᴜʟᴇs.        
+\n❍ ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ғʟᴏᴏᴅ sʏsᴛᴇᴍ.          
+\n❍ ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜsᴇʀs ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴs, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇғɪɴᴇᴅ ᴀᴄᴛɪᴏɴs sᴜᴄʜ ᴀs ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ.         
+\n❍ ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ sʏsᴛᴇᴍ, ʙʟᴀᴄᴋʟɪsᴛs, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇs ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅs.        
+\n❍ ɪ ᴄʜᴇᴄᴋ ғᴏʀ ᴀᴅᴍɪɴs' ᴘᴇʀᴍɪssɪᴏɴs ʙᴇғᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ sᴛᴜғғs
+\n\n_Harley's licensed under the GNU General Public License v3.0_
+\n❍ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 @SSJ4GOGETA          
+\n❍ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 @HarleyQuinnSupport            
+\n❍ 𝐔𝐩𝐝𝐚𝐭𝐞 & 𝐍𝐞𝐰𝐬 @HarleyQuinnNews.            
+\n𝑯𝒆𝒓𝒆 𝒊𝒔 𝒎𝒚 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/gogeta0sama/HarleyRobot).
+\nɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ϙᴜᴇsᴛɪᴏɴ ᴀʙᴏᴜᴛ ʜᴀʀʟᴇʏ ϙᴜɪɴɴ, ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
