@@ -103,7 +103,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` *ʜᴀʀʟᴇʏ ϙᴜɪɴɴ*🖤
+`Hi.. I'M` *ʜᴀʀʟᴇʏ ϙᴜɪɴɴ*[🖤](https://images6.alphacoders.com/788/788475.png)
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
 Maintained by [LUͥ₡łͣ₣ͫEƦ](t.me/SSJ4GOGETA)"""
 
@@ -691,7 +691,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "You Think I'm Die😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "*You Think I'm Die* ☠")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
