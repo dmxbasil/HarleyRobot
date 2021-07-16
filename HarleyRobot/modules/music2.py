@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from Cutiepii_Robot.conf import get_str_key
-from Cutiepii_Robot.pyrogramee.pluginhelpers import get_text, progress
-from Cutiepii_Robot import pbot
+from HarleyRobot.conf import get_str_key
+from HarleyRobot.pyrogramee.pluginhelpers import get_text, progress
+from HarleyRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
