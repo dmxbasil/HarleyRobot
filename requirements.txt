@@ -48,6 +48,7 @@ TgCrypto
 Pyrogram
 youtube-dl
 youtube_search_python
+pytube
 youtube_search
 asyncio
 dateparser==1.0.0
