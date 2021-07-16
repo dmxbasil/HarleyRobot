@@ -12,14 +12,14 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from Cutiepii_Robot.cutiepii.config import get_str_key
-from Cutiepii_Robot.functions.pluginhelpers import get_text, progress
-from Cutiepii_Robot import pgram
+from Cutiepii_Robot.conf import get_str_key
+from Cutiepii_Robot.pyrogramee.pluginhelpers import get_text, progress
+from Cutiepii_Robot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
 
-#@pgram.on_message(filters.command(["vsong", "video"]))
+@pbot.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
@@ -84,7 +84,7 @@ async def ytmusic(client, message: Message):
             os.remove(files)
 
 
-#@pgram.on_message(filters.command(["music", "song"]))
+@pbot.on_message(filters.command(["music", "song"]))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
     if not urlissed:
@@ -164,7 +164,7 @@ def time_to_seconds(time):
 # Lel, Didn't Get Time To Make New One So Used Plugin Made br @mrconfused and @sandy1709 dont edit credits
 
 
-@pgram.on_message(filters.command(["lyric", "lyrics"]))
+@pbot.on_message(filters.command(["lyric", "lyrics"]))
 async def _(client, message):
     lel = await message.reply("Searching For Lyrics.....")
     query = message.text
@@ -198,7 +198,7 @@ async def _(client, message):
         await lel.edit(reply)  # edit or reply
 
 
-@pgram.on_message(filters.command(["glyric", "glyrics"]))
+@pbot.on_message(filters.command(["glyric", "glyrics"]))
 async def lyrics(client, message):
 
     if r"-" in message.text:
