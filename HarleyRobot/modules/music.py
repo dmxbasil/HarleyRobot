@@ -75,7 +75,7 @@ def song(client, message):
         import asyncio, time, os, asyncio, json
 from telethon.tl.types import DocumentAttributeAudio
 from HarleyRobot.events import register
-from HarleyRobot.utlis import progress
+from HarleyRobot.utils import progress
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
 
