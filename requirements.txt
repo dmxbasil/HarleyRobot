@@ -43,6 +43,7 @@ aiofiles
 pyrate-limiter
 cachetools
 ujson
+json
 pretty_errors
 TgCrypto
 Pyrogram
