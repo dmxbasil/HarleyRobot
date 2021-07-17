@@ -554,16 +554,27 @@ def kayo(update: Update, context: CallbackContext):
 
 __help__ = """
 Get information about anime, manga or characters from [AniList](anilist.co).
+
 *Available commands:*
- • `/anime <anime>`*:* returns information about the anime.
- • `/character <character>`*:* returns information about the character.
- • `/manga <manga>`*:* returns information about the manga.
- • `/user <user>`*:* returns information about a MyAnimeList user.
- • `/upcoming`*:* returns a list of new anime in the upcoming seasons.
- • `/kaizoku <anime>`*:* search an anime on animekaizoku.com
- • `/kayo <anime>`*:* search an anime on animekayo.com
- • `/airing <anime>`*:* returns anime airing info.
- • /whatanime - reply to gif or video
+ • /anime <anime> *:* returns information about the anime.
+ • /character <character> *:* returns information about the character.
+ • /manga <manga> *:* returns information about the manga.
+ • /user <user> *:* returns information about a MyAnimeList user.
+ • /upcoming *:* returns a list of new anime in the upcoming seasons.
+ • /airing <anime>*:* returns anime airing info.
+ 
+ Search Anime On Sites without leaving Telegram.
+ 
+ *Available Commands:*
+ • /tpx <anime> *:* search an anime on HindiSub.com
+ • /kaizoku <anime> *:* search an anime on animekaizoku.com
+ • /kayo <anime> *:* search an anime on animekayo.com
+ • /aat <anime> *:* search an anime on animeacademy.in
+ • /hsa <anime> *:* search an anime on hindianime.net
+ • /ast <anime> *:* search an anime on animesubingteam.000webhostapp.com
+ • /atf <anime> *:* search an anime on atfanime.in
+ • /an <anime> *:* search an anime on animenagri.com
+ • /cat <anime> *:* search an anime on catotakus.blogspot.com
  """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime)
