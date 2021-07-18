@@ -98,7 +98,7 @@ def register(**args):
     return decorator
 
 
-def haritarobot(**args):
+def harleyrobot(**args):
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
@@ -163,28 +163,28 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         import importlib
-        import Harita.events
+        import HarleyRobot.event
 
-        path = Path(f"Harita/modules/{shortname}.py")
-        name = "Harita.modules.{}".format(shortname)
+        path = Path(f"HarleyRobot/modules/{shortname}.py")
+        name = "HarleyRobot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Successfully imported " + shortname)
     else:
         import importlib
-        import Harita.events
+        import HarleyRobot.event
 
-        path = Path(f"Harita/modules/{shortname}.py")
-        name = "Harita.modules.{}".format(shortname)
+        path = Path(f"HarleyRobot/modules/{shortname}.py")
+        name = "HarleyRobot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.register = register
-        mod.haritarobot = haritarobot
+        mod.harleyrobot = harleyrobot
         mod.tbot = tbot
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
-        sys.modules["Harita.modules." + shortname] = mod
+        sys.modules["Harley.modules." + shortname] = mod
         print("Successfully imported " + shortname)
 
 
