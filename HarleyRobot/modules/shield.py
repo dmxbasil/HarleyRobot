@@ -2,27 +2,27 @@
 #By Eviral (github.com/TeamEviral ; t.me/Eviral)
 #Don't Forget to give credit and make your source public.
 
-from Harita import BOT_ID
+from HarleyRobot import BOT_ID
 import nude
 import html
 import re
 import emoji
 import asyncio
-from Harita.modules.sql import cleaner_sql as sql
+from HarleyRobot.modules.sql import cleaner_sql as sql
 from pymongo import MongoClient
-from Harita import MONGO_DB_URI
-from Harita.events import register
+from HarleyRobot import MONGO_DB_URI
+from HarleyRobot.events import register
 from telethon import types, events
 from telethon.tl import *
 from telethon.tl.types import *
-from Harita import *
+from HarleyRobot import *
 import better_profanity
 from better_profanity import profanity
 from google_trans_new import google_translator
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["harita"]
+db = client["HarleyRobot"]
 approved_users = db.approve
 spammers = db.spammer
 cleanservices = db.cleanservice
