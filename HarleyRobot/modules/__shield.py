@@ -342,7 +342,7 @@ async def del_profanity(event):
         return
     msg = str(event.text)
     sender = await event.get_sender()
-     let = sender.username
+     #let = sender.username
     if await is_admin(event, event.message.sender_id):
         return
     chats = spammers.find({})
