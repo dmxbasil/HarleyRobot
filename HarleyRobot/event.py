@@ -9,18 +9,18 @@ from telethon.tl import functions
 from telethon.tl import types
 
 
-from Harita import CMD_LIST, LOAD_PLUG, tbot
+from HarleyRobot import CMD_LIST, LOAD_PLUG, tbot
 import glob
 import sys
-from Harita import ubot
+from HarleyRobot import ubot
 from pymongo import MongoClient
-from Harita import MONGO_DB_URI
-from Harita.modules.sql.checkuser_sql import add_usersid_in_db, already_added, get_all_users
+from HarleyRobot import MONGO_DB_URI
+from HarleyRobot.modules.sql.checkuser_sql import add_usersid_in_db, already_added, get_all_users
 
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Harita"]
+db = client["HarleyRobot"]
 blacklist = db.black
 sudo = db.sudo
 
