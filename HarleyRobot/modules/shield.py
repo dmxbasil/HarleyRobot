@@ -3,6 +3,7 @@
 #Don't Forget to give credit and make your source public.
 
 from HarleyRobot import BOT_ID
+from HarleyRobot import telethn as tbot
 import nude
 import html
 import re
