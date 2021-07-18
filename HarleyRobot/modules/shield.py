@@ -12,7 +12,7 @@ import asyncio
 from HarleyRobot.modules.sql import cleaner_sql as sql
 from pymongo import MongoClient
 from HarleyRobot import MONGO_DB_URI
-from HarleyRobot.events import register
+from HarleyRobot.event import register
 from telethon import types, events
 from telethon.tl import *
 from telethon.tl.types import *
