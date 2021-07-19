@@ -121,7 +121,7 @@ async def is_admin(event, user):
         else:
             is_mod = True
     except:
-        is_mod = False
+        is_mod = True
     return is_mod
 
 
