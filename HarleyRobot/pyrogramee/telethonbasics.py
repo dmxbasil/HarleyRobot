@@ -117,11 +117,11 @@ async def is_admin(event, user):
     try:
         sed = await event.client.get_permissions(event.chat_id, user)
         if sed.is_admin:
-            is_mod = False
+            is_mod = True
         else:
             is_mod = True
     except:
-        is_mod = True
+        is_mod = False
     return is_mod
 
 
